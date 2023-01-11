@@ -2,17 +2,19 @@
 {
     internal class Program
     {
+        enum Semaphore
+        {
+            Red = 100,
+            Yellow = 200,
+            Green = 300
+        }
+
         static void Main(string[] args)
         {
-            string name = "Jane";
-            byte age = 27;
-            bool hasPets= true;
-            double shoeSize = 37.5;
-            
-            Console.WriteLine("My name is " + name);
-            Console.WriteLine("MyAge " + age);
-            Console.WriteLine("Do I have a pet? " + hasPets);
-            Console.WriteLine("My shoe size is " + shoeSize);
+            Console.WriteLine("Hello!!!");
+            Console.WriteLine($"Red is {(int)Semaphore.Red}");
+            Console.WriteLine($"Yellow is {((int)Semaphore.Yellow)}");
+            Console.WriteLine($"Green is {((int)Semaphore.Green)}");
         }
     }
 }
